@@ -3,69 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Webpage Template</title>
+    <title>Floating Sticky Footer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section.</p>
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This is the about section.</p>
-        </section>
-        <section id="services">
-            <h2>Services</h2>
-            <p>This is the services section.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>This is the contact section.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
-
-    <div class="footer">
-        <div class="content">
-            <button class="close-btn">&times;</button>
-            <div class="text">
-                <p>နိုင်ငံရေး စီမံခန့်ခွဲ လုပ်ငန်းစဉ်</p>
-                <p>အသက်မွေးဝမ်းကျောင်း ရန်</p>
-                <p>မဟာဗျူဟာသို့</p>
-            </div>
-            <div class="see-more">
-                <button>ကြည့်မည်</button>
-            </div>
-            <div class="image">
-                <img src="https://mahar.asia/wp-content/uploads/2022/08/yangon-01.jpeg" alt="City View">
-            </div>
+    <div class="footer-banner" id="footerBanner">
+        <div class="banner-content">
+            <p>PEDU Channel ဖလုံပညာမှ</p>
+            <p>ကြိုဆိုပါသည်။</p>
+            <button class="see-more-button">ဝင်ကြည့်မည်</button>
+        </div>
+        <div class="banner-image">
+            <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaqLtu5iLCTnLueVHljNJ241V_TYP_MEjkcy2lPLnzHb4DsXPggqU1jde_QP6dYLFPpUNOVN7pzzzbxj6jB3TWdbmOYbrq_Tw=w1432-h795-rw-v1" alt="Banner Image">
+            <button class="close-button" onclick="closeBanner()">✕</button>
         </div>
     </div>
 
-    <!--  Footer sticky Ad :: starts -->
-<div class='NR-Ads jhfdiuh0' id='NR-Ads'>
-    <div class='NR-Ads-close' onclick='document.getElementById("NR-Ads").style.display="none"'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/></svg></div>
-    <div class='NR-Ads-content'>
-    <center>
-    PEDU Channel ဖလုံပညာမှကြိုဆိုပါသည်။ 
-    </center>
-    </div>
-</div>
-<!--  Footer sticky Ad :: ends --> 
+    <script>
+        function closeBanner() {
+            document.getElementById('footerBanner').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
